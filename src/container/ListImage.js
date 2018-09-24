@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { NavBar, WingBlank, WhiteSpace, InputItem } from 'antd-mobile';
 import { FaHome } from "react-icons/fa";
+import { translate } from 'react-i18next';
 
 class ListImage extends Component {
   constructor(props) {
@@ -26,8 +27,6 @@ class ListImage extends Component {
                 paddingTop: '10px'
               }}
             >
-              {' '}
-              <FaHome />
             </div>
           ]}
         />
@@ -48,4 +47,4 @@ class ListImage extends Component {
     );
   }
 }
-export default ListImage;
+export default translate('Common')(ListImage);

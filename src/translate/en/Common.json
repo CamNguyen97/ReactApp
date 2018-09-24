@@ -1,0 +1,22 @@
+{
+  "view": {
+    "layout": {
+      "logout": "Logout",
+      "home": "Home",
+      "image": "Image",
+      "setting": "Setting"
+    },
+    "home": {
+
+    },
+    "listImage": {
+
+    },
+    "setting": {
+      "title": "Setting",
+      "done": "Done",
+      "cancel": "Cancel",
+      "language": "Language"
+    }
+  }
+}

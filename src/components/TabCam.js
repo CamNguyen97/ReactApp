@@ -4,6 +4,8 @@ import Home from '../container/Home';
 import Setting from '../container/Setting';
 import ListImage from '../container/ListImage';
 import { FaHome, FaSlidersH, FaImage } from "react-icons/fa";
+import { translate } from 'react-i18next';
+
 
 class Tab extends React.Component {
   constructor(props) {
@@ -23,6 +25,7 @@ class Tab extends React.Component {
   }
 
   render() {
+    const { t } = this.props;
     return (
       <div style={{ position: 'fixed', height: '100%', width: '100%', top: 0 }}>
         <TabBar
@@ -32,7 +35,7 @@ class Tab extends React.Component {
           hidden={this.state.hidden}
         >
           <TabBar.Item
-            title="Home"
+            title={t('view.layout.home')}
             key="Home"
             icon={<FaHome/>}
             selectedIcon={<FaHome color="rgb(51, 163, 244)"/>}
@@ -49,7 +52,7 @@ class Tab extends React.Component {
           <TabBar.Item
             icon={<FaImage/>}
             selectedIcon={<FaImage color="rgb(51, 163, 244)"/>}
-            title="Image"
+            title={t('view.layout.image')}
             key="Image"
             selected={this.state.selectedTab === 'redTab'}
             onPress={() => {
@@ -64,7 +67,7 @@ class Tab extends React.Component {
           <TabBar.Item
             icon={<FaSlidersH/>}
             selectedIcon={<FaSlidersH color = 'rgb(51, 163, 244)'/>}
-            title="Setting"
+            title={t('view.layout.setting')}
             key="Setting"
             selected={this.state.selectedTab === 'greenTab'}
             onPress={() => {
@@ -81,4 +84,4 @@ class Tab extends React.Component {
   }
 }
 
-export default Tab;
+export default translate('Common')(Tab);

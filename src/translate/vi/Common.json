@@ -1,0 +1,22 @@
+{
+  "view": {
+    "layout": {
+      "logout": "Đăng xuất",
+      "home": "Trang chủ",
+      "image": "Ảnh",
+      "setting": "Cài đặt"
+    },
+    "home": {
+
+    },
+    "listImage": {
+
+    },
+    "setting": {
+      "title": "Cài đặt",
+      "done": "Chấp nhận",
+      "cancel": "Hủy",
+      "language": "Ngôn ngữ"
+    }
+  }
+}
